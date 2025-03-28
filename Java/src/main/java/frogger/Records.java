@@ -17,4 +17,8 @@ public class Records {
     public boolean hasRecord(FroggerID froggerID) {
         return this.recordSet.contains(froggerID);
     }
+
+    public Set<FroggerID> getAllRecords() {
+        return new HashSet<>(this.recordSet);
+    }
 }
